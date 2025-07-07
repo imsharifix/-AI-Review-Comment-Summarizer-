@@ -1,0 +1,118 @@
+/* فونت گوگل پاپینز */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+  direction: ltr;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+#comments-container {
+  width: 90%;
+  max-width: 720px;
+}
+
+.comment-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow:
+    0 4px 12px rgba(102, 126, 234, 0.3),
+    0 2px 8px rgba(118, 75, 162, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  user-select: text;
+}
+
+.comment-box:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 10px 20px rgba(102, 126, 234, 0.5),
+    0 8px 16px rgba(118, 75, 162, 0.5);
+}
+
+.comment-author {
+  font-weight: 700;
+  color: #764ba2;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.comment-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+#summary-box {
+  background: #764ba2;
+  color: white;
+  max-width: 720px;
+  width: 90%;
+  padding: 2rem 2.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  box-shadow:
+    0 10px 30px rgba(118, 75, 162, 0.6);
+  margin-top: 4rem;
+  text-align: left;
+  user-select: text;
+  min-height: 100px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+button {
+  margin-top: 3rem;
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  box-shadow:
+    0 6px 12px rgba(102, 126, 234, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: #5a67d8;
+  box-shadow:
+    0 10px 20px rgba(90, 103, 216, 0.7);
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  .comment-box, #summary-box {
+    padding: 1rem 1.2rem;
+  }
+  #summary-box {
+    font-size: 1.1rem;
+    min-height: 80px;
+  }
+  button {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+  }
+}
